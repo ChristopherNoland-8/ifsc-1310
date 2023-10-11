@@ -14,6 +14,9 @@ html {
 img{
   max-width:100%;
   height:auto;
+  margin:10px 0 10px 20px;
+  padding:5px;
+  ;
 }
 /*  ---------------Utility Classes-----------------  */
 .container{
@@ -21,16 +24,32 @@ img{
   margin:40px auto;
   padding:10px;
 }
+.img-right{
+  float:right;
+  box-shadow: -4px 4px 1px rgba(0,0,0,.4)
+}
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0;
+  padding:5px;
+}
+
+.img-center{
+  diplay:block;
+  margin:20px auto;
+}
 
 /*-----Global Styles-----*/
 body {
-  background-color: #e78f38;
+  background-color: #F2AA6B;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+  background-repeat:space;
 }
 
 header.primary {
-  background-color: #de7d00;
+  background-color: #8C2703;
   text-align: center;
   text-shadow: 1px 1px #000000;
   padding: 40px;
@@ -93,13 +112,13 @@ header.primary nav ul li a:hover {
 #content{
   display:flex;
   flex-direction:row;
-  gap:15px;
+  gap:20px;
 }
 
 #content .post{
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   padding:10px;
-  border-radius:30px;
+  border-radius:3px;
   font-size:.9rem;
   transition:.5s;
 }
@@ -109,7 +128,7 @@ header.primary nav ul li a:hover {
 }
 
 article.post figure{
-  margin:0px;
+  margin:0;
 }
 
 article.post time.post-date, article.post figcaption,article.post .post-meta{
@@ -126,6 +145,12 @@ article.post a:hover{
 
 article.post img{
   border:.5px solid #733702;
+  padding:2px;
+}
+
+#practice h2{
+  color:#ffffff;
+  border-bottom:1px solid #ffffff;
 }
 
 aside[role="complementary"]{
@@ -134,6 +159,25 @@ aside[role="complementary"]{
   padding:1.9rem;
 }
 
+aside .container a:last-of-type{
+  display:block;
+  text-align:right;
+  font-size:.95rem;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+aside .container a{color:#ffffff}
+
+aside footer{
+  visibility:hidden;
+}
+
+#colophon{
+  background-color:#8C2703;
+  padding:10px;
+  color:#ffffff;
+}
 /*------- Media Queries-----*/
 
 @media screen and (max-width:600px) {
@@ -145,5 +189,14 @@ aside[role="complementary"]{
   }
   header.primary nav ul a{
     display:block;
+  }
+  
+  #content{
+    flex-direction:column;
+  }
+  
+  #content img{
+    diplay: block;
+    margin: auto;
   }
 }
