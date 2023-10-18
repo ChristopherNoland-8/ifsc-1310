@@ -35,7 +35,7 @@ img{
 }
 
 .img-center{
-  diplay:block;
+  display:block;
   margin:20px auto;
 }
 
@@ -123,7 +123,7 @@ header.primary nav ul li a:hover {
   transition:.5s;
 }
 #content article.post:hover{
-  bow-shadow: 0 8px 16px rgba(0,0,0,.75);
+  box-shadow: 0 8px 16px rgba(0,0,0,.75);
   
 }
 
@@ -167,7 +167,7 @@ caption{
 }
 
 th{
-  background-collor: #ffffff;
+  background-color: #ffffff;
   color:#ffffff;
   padding:10px;
 }
@@ -247,7 +247,7 @@ aside footer{
   }
   
   #content img{
-    diplay: block;
+    display: block;
     margin: auto;
   }
 }
