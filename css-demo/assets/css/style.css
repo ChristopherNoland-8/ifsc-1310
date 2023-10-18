@@ -44,7 +44,7 @@ body {
   background-color: #F2AA6B;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+ /* background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");*/
   background-repeat:space;
 }
 
@@ -153,10 +153,61 @@ article.post img{
   border-bottom:1px solid #ffffff;
 }
 
+table{
+  border:1px solid #c0c0c0;
+  width: 100%;
+  border-collapse:collapse;
+}
+tr:nth-child(even){
+  background-color:#ffffff;
+}
+caption{
+  font-weight:bold;
+  margin:10px;
+}
+
+th{
+  background-collor: #ffffff;
+  color:#ffffff;
+  padding:10px;
+}
+td{
+  border:1px solit #c0c0c0c0;
+  padding:5px;
+}
+td:nth-child(3), td:nth-child(2){
+  text-align:right;
+}
+
+#practice ul ul{
+  list-style-type:square;
+}
+
+dl{
+  width:50%;
+  background:red;
+  margin:auto;
+}
+dt{
+  font-weight:bold;
+  
+}
+
+dd+dt{
+  color:red;
+}
+dd{
+  margin:0;
+}
 aside[role="complementary"]{
   background-color:#731702;
   color:#ffffff;
   padding:1.9rem;
+}
+
+#practice blockquote cite{
+  text-align:right;
+  display:block;
 }
 
 aside .container a:last-of-type{
